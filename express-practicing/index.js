@@ -17,7 +17,7 @@ app.get("/", (req, res)=>{
           console.log(err);
         }
         else{
-          console.log(tools.dissectObj(files))  ;
+          console.log(tools.dissectObj(files)) ;
           let str = `<div style="display:flex; flex-Direction: column; justify-Content: center; align-Items: center; background-color:rgba(10, 150, 255, 1); width: '50%'; border: 1px solid red;"\n`;
           files.forEach(
             (file)=>{
