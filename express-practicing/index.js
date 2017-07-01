@@ -19,6 +19,7 @@ app.get("/", (req, res)=>{
           console.log(err);
         }
         else{
+          // precisamos ajeitar isso aqui por causa da programacao assincrona.
           arr.push(`<ul>\n`);
           files.forEach(
             (file)=>{
